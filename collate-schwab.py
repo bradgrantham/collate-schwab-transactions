@@ -72,12 +72,9 @@ for row in f:
     elif what == 'Cash Disbursement':
         print "cash disbursement for %f" % float(amount)
     else :
-        print "'%s'" % what, row
+        print "Unknown transaction type in row '%s'" % what, row
         sys.exit(1)
 
 for (fund, amount) in funds.iteritems():
     if abs(amount) >= 0.00001:
         print "%s, %f" % (fund, amount)
-# for (fund, amount) in funds.iteritems():
-    # if abs(amount) >= 0.00001:
-        # print "%f" % (amount)
