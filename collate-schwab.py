@@ -3,6 +3,7 @@ import sys
 import csv
 
 long_name_to_symbol = {
+    "T. Rowe Price Retirement 2035 Tr-A" : "TRRJX",
     "Voya Global Real Estate I" : "IGLIX",
     "American Funds Europacific Growth R5" : "RERFX",
     "Lord Abbett Developing Growth A" : "LAGWX",
@@ -32,6 +33,7 @@ f = csv.reader(sys.stdin)
 # "2/28/2018 12:00:00 AM","Vanguard Institutional Index I","Matching","Contributions - Employer","Purchase","247.900000","0.181000000","44.89",
 
 funds = {
+    "TRRJX": 0,
     "IGLIX": 0,
     "RERFX": 0,
     "LAGWX": 0,
